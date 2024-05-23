@@ -1,0 +1,187 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0a0a23;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #151538;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 150px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1e1e40;
+}
+
+.social-links a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.swap, .video, .tokenomics {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.swap img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.swap button {
+    background: #ff0077;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.swap button:hover {
+    background: #e6006b;
+}
+
+.tokenomics-content {
+    background: #2e2e5e;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #151538;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* New Styles for the Rainbow Separator */
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: switchImage .4s infinite;
+}
+
+/* New Styles for the Join Army Section */
+.join-army {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1e1e40;
+}
+
+.join-army h2 {
+    margin-top: 30px;
+    font-size: 2em;
+}
+
+.nyan-cat-logo {
+    width: 100px;
+    margin: 20px 0;
+}
+
+.nyan-cats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.nyan-cats img {
+    width: 80px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .header-content nav {
+        margin-top: 10px;
+    }
+
+    .swap img {
+        max-width: 150px;
+    }
+
+    .tokenomics-content {
+        max-width: 100%;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .join-army .nyan-cat-logo {
+        width: 80px;
+    }
+
+    .join-army h2 {
+        font-size: 1.5em;
+    }
+
+    .nyan-cats img {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        padding: 30px 10px;
+    }
+
+    .swap, .video, .tokenomics, .join-army {
+        padding: 30px 10px;
+    }
+
+    .swap button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .social-links a {
+        font-size: 1em;
+    }
+
+    .join-army h2 {
+        font-size: 1.2em;
+    }
+
+    .nyan-cats img {
+        width: 50px;
+    }
+}
